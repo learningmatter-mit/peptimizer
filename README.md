@@ -41,10 +41,5 @@ The pre-trained models are available for download -
 * <b><a href='https://www.dropbox.com/s/jrtghjd5fvtrbl9/generator.hdf5?dl=0'>generator</a></b>
 * <b><a href='https://www.dropbox.com/s/lc0edfl51ppln75/predictor.hdf5?dl=0'>predictor</a></b>
 
-## Authors
-The package was written by <a href='https://www.linkedin.com/in/pikulsomesh/'>Somesh Mohapatra</a> who was advised by <a href='https://dmse.mit.edu/people/rafael-gomez-bombarelli'>Prof. Rafael Gómez-Bombarelli </a>.
-
-The wet-lab experiments were performed by <a href='https://www.linkedin.com/in/carly-schissel-137a0763/'>Carly K. Schissel</a>, Dr. Justin M. Wolfe, Dr. Colin M. Fadzen, Kamela Bellovoda, Dr. Leslie Wu and Dr. Annika Malmberg, under the supervision of <a href='https://chemistry.mit.edu/profile/bradley-l-pentelute/'>Prof. Bradley Pentelute</a>.
-
 ## License
 MIT License

@@ -44,7 +44,7 @@ The pre-trained models are available for download -
 ## Authors
 The package was primarily written by <a href='https://www.linkedin.com/in/pikulsomesh/'>Somesh Mohapatra</a> who was advised by <a href='https://dmse.mit.edu/people/rafael-gomez-bombarelli'>Prof. Rafael Gómez-Bombarelli </a>.
 
-The wet-lab experiments were performed by Carly K. Schissel, Dr. Justin M. Wolfe, Dr. Colin M. Fadzen, Kamela Bellovoda, Dr. Leslie Wu and Dr. Annika Malmberg, under the supervision of <a href='https://chemistry.mit.edu/profile/bradley-l-pentelute/'>Prof. Bradley Pentelute</a>.
+The wet-lab experiments were performed by <a href='https://www.linkedin.com/in/carly-schissel-137a0763/'>Carly K. Schissel</a>, <a href='https://www.linkedin.com/in/justin-wolfe-95680086/'>Dr. Justin M. Wolfe</a>, <a href='https://www.researchgate.net/scientific-contributions/2129312501_Colin_M_Fadzen'>Dr. Colin M. Fadzen</a>, Kamela Bellovoda, Dr. Leslie Wu and Dr. Annika Malmberg, under the supervision of <a href='https://chemistry.mit.edu/profile/bradley-l-pentelute/'>Prof. Bradley Pentelute</a>.
 
 ## License
 MIT License

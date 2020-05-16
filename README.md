@@ -4,7 +4,7 @@ This package couples supervised and unsupervised deep learning models to sample 
 
 The package is accompanied by a <b>Tutorial.ipynb</b> (Jupyter notebook) that covers the training and usage of major functions (generator, predictor and optimizer) and analysis of graident activations using a pre-trained model.
 
-Paper: <a href='https://github.mit.edu/MLMat/Mach_CPP/'> Interpretable deep learning for <i>de novo</i> design of cell-penetrating abiotic polymers </a>
+Paper: <a href='https://www.biorxiv.org/content/10.1101/2020.04.10.036566v1'> Interpretable deep learning for <i>de novo</i> design of cell-penetrating abiotic polymers </a>
 
 Cite:
 ```

@@ -1,45 +1,25 @@
-# Interpretable deep learning for <i>de novo</i> design of cell-penetrating abiotic polymers
+# Peptimizer
 
-This package couples supervised and unsupervised deep learning models to sample peptides and other functional polymers, predict and infer their activity, and optimize for a given set of parameters.
+This package consists of works from multiple publications based on supervised and unsupervised deep learning models for  optimizing peptides. The code is agnostic of the monomer, and can be used for a broad range of polymers with minimal changes.
 
-The package is accompanied by a <b>Tutorial.ipynb</b> (Jupyter notebook) that covers the training and usage of major functions (generator, predictor and optimizer) and analysis of graident activations using a pre-trained model.
+## Publications
+### Interpretable deep learning for <i>de novo</i> design of cell-penetrating abiotic polymers <a href='https://www.biorxiv.org/content/10.1101/2020.04.10.036566v1'> (link) </a>
+The work done as a part of this paper is denoted with the prefix/suffix <u>cpp</u> for respective files. 
+#### Usage
+<b>Tutorial_CPP.ipynb</b> (Jupyter notebook) covers the training and usage of major functions (Generator, Predictor and Optimizer) and analysis of graident activations using a pre-trained model. This file can be used as-is with the current and customized datasets by providing appropriate filepath and parameters.
 
-Paper: <a href='https://www.biorxiv.org/content/10.1101/2020.04.10.036566v1'> Interpretable deep learning for <i>de novo</i> design of cell-penetrating abiotic polymers </a>
-
-Cite:
-```
-To be updated.
-```
-
-## Prerequisites
-The package requires:
-* <a href='http://faroit.com/keras-docs/2.1.4/'>Keras 2.1.4 </a>
-* <a href='https://www.tensorflow.org/'>Tensorflow 1.5.0 </a>
-* <a href='https://www.rdkit.org/'>RDKit </a>
-* <a href='https://github.com/titu1994/Nested-LSTM'>Nested LSTM </a>
-
-If you are new to Python, please consider using a package manager, preferably <a href='https://www.anaconda.com/'>anaconda</a>, to manage the libraries for the implementation of the package.
-
-After installing anaconda, use the <b>mach_cpp.yml</b> file to create the environment - <br>
-```
-conda env create -f mach_cpp.yml python==3.6
-```
-
-## Usage
-The <b>Tutorial.ipynb</b> can be used as-is with the current and customized datasets by providing appropriate filepath.
+### Deep Learning for Prediction and Optimization of Rapid Flow Peptide Synthesis <a href='https://github.mit.edu/MLMat/peptimizer'> (coming soon) </a>
+The work done as a part of this paper is denoted with the prefix/suffix <u>synthesis</u> for respective files. 
+#### Usage
+<b>Tutorial_Synthesis.ipynb</b> (Jupyter notebook) covers the training and usage of major functions (FeatureTransformation, Predictor and Optimizer) and analysis of graident activations using a pre-trained model. This file can be used as-is with the current and customized datasets by providing appropriate filepath and parameters.
 
 #### For advanced users
-You may change the model architecture and other parameters in the generator, predictor and optimizer files.
+You may change the model architecture and other parameters in the files under utils.
 
-## Data
-There are two datasets -
-* <b>generator_dataset.csv</b> - Used for the training of the generator
-* <b>predictor_dataset.csv</b> - Used for the training of the predictor
-
-## Pre-trained models
-The pre-trained models are available for download -
-* <b><a href='https://www.dropbox.com/s/jrtghjd5fvtrbl9/generator.hdf5?dl=0'>generator</a></b>
-* <b><a href='https://www.dropbox.com/s/lc0edfl51ppln75/predictor.hdf5?dl=0'>predictor</a></b>
+### Prerequisites
+The package requires:
+* <a href='https://www.tensorflow.org/'>Tensorflow 2.x</a>
+* <a href='https://www.rdkit.org/'>RDKit </a>
 
 ## License
 MIT License

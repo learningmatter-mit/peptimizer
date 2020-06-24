@@ -23,7 +23,7 @@ Based on our work on optimization of synthetic accessibility for polymers synthe
 <img src="https://github.com/learningmatter-mit/peptimizer/blob/master/figures/Synthesis.svg" width="100%" height="600"><br>
 
 ### Interpretability of models
-Using <b>gradient activation maps</b>, we provide monomer and sub-structure level insight into the functionality of different sequences. This is provided in both Tutorial notebooks. For example, in the case of functionality-based models, this enables to find the specific monomers (and their substructures) which contribute positively or negatively to the activity. 
+Using <b>gradient activation maps</b>, we provide monomer and sub-structure level insight into the functionality of different sequences. For example, in the case of functionality-based models, this enables to find the specific monomers (and their substructures) which contribute positively or negatively to the activity.
 
 ## Dependencies
 The package requires:

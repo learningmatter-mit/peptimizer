@@ -1,25 +1,58 @@
 # Peptimizer
 
-This package consists of works from multiple publications based on supervised and unsupervised deep learning models for  optimizing peptides. The code is agnostic of the monomer, and can be used for a broad range of polymers with minimal changes.
+Peptimizer is a repository based on machine learning algorithms for the optimization of peptides, and functional polymers in general. The codebase has been designed to be used for optimization of functionality and synthetic accessibility.
 
-## Publications
-### Interpretable deep learning for <i>de novo</i> design of cell-penetrating abiotic polymers <a href='https://www.biorxiv.org/content/10.1101/2020.04.10.036566v1'> (link) </a>
-The work done as a part of this paper is denoted with the prefix/suffix <u>cpp</u> for respective files. 
-#### Usage
-<b>Tutorial_CPP.ipynb</b> (Jupyter notebook) covers the training and usage of major functions (Generator, Predictor and Optimizer) and analysis of graident activations using a pre-trained model. This file can be used as-is with the current and customized datasets by providing appropriate filepath and parameters.
+## Tools
+### Optimization of functionality
+Based on our work on generating novel and highly efficient cell-penetrating peptides <a href='https://www.biorxiv.org/content/10.1101/2020.04.10.036566v1'> (link)</a>, we provide a generator-predictor-optimizer framework in for the discovery of novel functional polymers. A tutorial notebook demonstrating the usage is presented in <b>Tutorial_CPP.ipynb</b>.<br> 
+<ul>
+  <li><b>Generator</b> is trained on the library of polymer sequences in an unsupervised fashion using recurrent neural networks, and is used to sample similar-looking polymers.</b> 
+  <li><b>Predictor</b> is a convolutional neural network model trained on sequence-activity relationships. The sequences are represented as matrices of topological fingerprints of monomers. This is used to estimate the activities for unknown sequences.</li>
+  <li><b>Optimizer</b> is based on genetic algorithms, and optimizes sequences by evaluating single-residue and multi-residue mutations against an objective function.
+</ul>
 
-### Deep Learning for Prediction and Optimization of Rapid Flow Peptide Synthesis <a href='https://github.mit.edu/MLMat/peptimizer'> (coming soon) </a>
-The work done as a part of this paper is denoted with the prefix/suffix <u>synthesis</u> for respective files. 
-#### Usage
-<b>Tutorial_Synthesis.ipynb</b> (Jupyter notebook) covers the training and usage of major functions (FeatureTransformation, Predictor and Optimizer) and analysis of graident activations using a pre-trained model. This file can be used as-is with the current and customized datasets by providing appropriate filepath and parameters.
+<img src="https://github.mit.edu/MLMat/peptimizer/blob/master/figures/CPP.svg" width="100%" height="400"><br>
 
-#### For advanced users
-You may change the model architecture and other parameters in the files under utils.
+### Optimization of synthetic accessibility
+Based on our work on optimization of synthetic accessibility for polymers synthesized using flow chemistry<a href=''> (coming soon)</a>, we provide a predictor-optimizer framework. A tutorial notebook demonstrating the usage is presented in <b>Tutorial_Synthesis.ipynb</b>.<br>
+<ul>
+  <li><b>Predictor</b> is trained over experimental synthesis parameters such as pre-synthesized chain, incoming monomer, temperature, flow rate and catalysts. The different variables are represented as fingerprint, continuous and categorical features.<br>
+  <li><b>Optimizer</b> for synthesis is a brute-force optimization code that evaluates single-point mutants of the wild-type sequence for higher theoretical yield.<br>
+</ul>
 
-### Prerequisites
+<img src="https://github.mit.edu/MLMat/peptimizer/blob/master/figures/Synthesis.svg" width="100%" height="600"><br>
+
+### Interpretability of models
+Using <b>gradient activation maps</b>, we provide monomer and sub-structure level insight into the functionality of different sequences. This is provided in both Tutorial notebooks. For example, in the case of functionality-based models, this enables to find the specific monomers (and their substructures) which contribute positively or negatively to the activity. 
+
+## Dependencies
 The package requires:
 * <a href='https://www.tensorflow.org/'>Tensorflow 2.x</a>
 * <a href='https://www.rdkit.org/'>RDKit </a>
+
+## How to cite
+Optimization of functionality codebase - 
+```
+@article{Schissel2020,
+author = {Schissel, Carly K and Mohapatra, Somesh and Wolfe, Justin M and Fadzen, Colin M and Bellovoda, Kamela and Wu, Chia-Ling and Wood, Jenna A. and Malmberg, Annika B. and Loas, Andrei and G{\'{o}}mez-Bombarelli, Rafael and Pentelute, Bradley L.},
+doi = {10.1101/2020.04.10.036566},
+file = {:Users/somesh/Downloads/Articles/2020.04.10.036566v1.full.pdf:pdf},
+journal = {bioRxiv},
+title = {{Interpretable Deep Learning for De Novo Design of Cell-Penetrating Abiotic Polymers}},
+url = {https://www.biorxiv.org/content/10.1101/2020.04.10.036566v1},
+year = {2020}
+}
+```
+
+Optimization of synthetic accessibility codebase -
+```
+@article{Mohapatra2020,
+author = {Mohapatra, Somesh and Hartrampf, Nina and Poskus, Mackenzie and Loas, Andrei and Gomez-Bombarelli, Rafael and Pentelute, Bradley L.},
+journal = {Under Preparation},
+title = {Deep Learning for Prediction and Optimization of Rapid Flow Peptide Synthesis},
+year = {2020}
+}
+```
 
 ## License
 MIT License

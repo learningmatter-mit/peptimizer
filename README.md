@@ -11,7 +11,7 @@ Based on our work on generating novel and highly efficient cell-penetrating pept
   <li><b>Optimizer</b> is based on genetic algorithms, and optimizes sequences by evaluating single-residue and multi-residue mutations against an objective function.
 </ul>
 
-<img src="https://github.mit.edu/MLMat/peptimizer/blob/master/figures/CPP.svg" width="100%" height="400"><br>
+<img src="https://github.com/learningmatter-mit/peptimizer/blob/master/figures/CPP.svg" width="100%" height="400"><br>
 
 ### Optimization of synthetic accessibility
 Based on our work on optimization of synthetic accessibility for polymers synthesized using flow chemistry<a href=''> (coming soon)</a>, we provide a predictor-optimizer framework. A tutorial notebook demonstrating the usage is presented in <b>Tutorial_Synthesis.ipynb</b>.<br>
@@ -20,7 +20,7 @@ Based on our work on optimization of synthetic accessibility for polymers synthe
   <li><b>Optimizer</b> for synthesis is a brute-force optimization code that evaluates single-point mutants of the wild-type sequence for higher theoretical yield.<br>
 </ul>
 
-<img src="https://github.mit.edu/MLMat/peptimizer/blob/master/figures/Synthesis.svg" width="100%" height="600"><br>
+<img src="https://github.com/learningmatter-mit/peptimizer/blob/master/figures/Synthesis.svg" width="100%" height="600"><br>
 
 ### Interpretability of models
 Using <b>gradient activation maps</b>, we provide monomer and sub-structure level insight into the functionality of different sequences. This is provided in both Tutorial notebooks. For example, in the case of functionality-based models, this enables to find the specific monomers (and their substructures) which contribute positively or negatively to the activity. 

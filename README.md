@@ -4,10 +4,10 @@ Peptimizer is a repository based on machine learning algorithms for the optimiza
 
 ## Tools
 ### Optimization of functionality
-Based on our work on generating novel and highly efficient cell-penetrating peptides <a href='https://www.biorxiv.org/content/10.1101/2020.04.10.036566v1'> (link)</a>, we provide a generator-predictor-optimizer framework in for the discovery of novel functional polymers. A tutorial notebook demonstrating the usage is presented in <b>Tutorial_CPP.ipynb</b>.<br> 
+Based on our work on generating novel and highly efficient cell-penetrating peptides <a href='https://www.biorxiv.org/content/10.1101/2020.04.10.036566v1'> (link)</a>, we provide a generator-predictor-optimizer framework for the discovery of novel functional polymers. A tutorial notebook demonstrating the usage is presented in <b>Tutorial_CPP.ipynb</b>.<br> 
 <ul>
   <li><b>Generator</b> is trained on the library of polymer sequences in an unsupervised fashion using recurrent neural networks, and is used to sample similar-looking polymers.</b> 
-  <li><b>Predictor</b> is a convolutional neural network model trained on sequence-activity relationships. The sequences are represented as matrices of topological fingerprints of monomers. This is used to estimate the activities for unknown sequences.</li>
+  <li><b>Predictor</b> is a convolutional neural network model trained on sequence-activity relationships. The sequences are represented as matrices of monomer fingerprint bit-vectors. Each fingerprint bti-vector is a topological exploration of the monomer graph, where atoms are treated as nodes and bonds as edges. This is used to estimate the activities for unknown sequences.</li>
   <li><b>Optimizer</b> is based on genetic algorithms, and optimizes sequences by evaluating single-residue and multi-residue mutations against an objective function.
 </ul>
 

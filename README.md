@@ -38,7 +38,7 @@ author = {Schissel, Carly K and Mohapatra, Somesh and Wolfe, Justin M and Fadzen
 doi = {10.1101/2020.04.10.036566},
 file = {:Users/somesh/Downloads/Articles/2020.04.10.036566v1.full.pdf:pdf},
 journal = {bioRxiv},
-title = {{Interpretable Deep Learning for De Novo Design of Cell-Penetrating Abiotic Polymers}},
+title = {Interpretable Deep Learning for De Novo Design of Cell-Penetrating Abiotic Polymers},
 url = {https://www.biorxiv.org/content/10.1101/2020.04.10.036566v1},
 year = {2020}
 }

@@ -14,7 +14,7 @@ Based on our work on generating novel and highly efficient cell-penetrating pept
 <img src="https://github.com/learningmatter-mit/peptimizer/blob/master/figures/CPP.svg" width="100%" height="400"><br>
 
 ### Optimization of synthetic accessibility
-Based on our work on optimization of synthetic accessibility for polymers synthesized using flow chemistry<a href='https://chemrxiv.org/articles/preprint/Deep_Learning_for_Prediction_and_Optimization_of_Fast-Flow_Peptide_Synthesis/12649343'> (link)</a>, we provide a predictor-optimizer framework. A tutorial notebook demonstrating the usage is presented in <b>Tutorial_Synthesis.ipynb</b>.<br>
+Based on our work on optimization of synthetic accessibility for polymers synthesized using flow chemistry<a href='https://doi.org/10.1021/acscentsci.0c00979'> (link)</a>, we provide a predictor-optimizer framework. A tutorial notebook demonstrating the usage is presented in <b>Tutorial_Synthesis.ipynb</b>.<br>
 <ul>
   <li><b>Predictor</b> is trained over experimental synthesis parameters such as pre-synthesized chain, incoming monomer, temperature, flow rate and catalysts. The different variables are represented as fingerprint, continuous and categorical features.<br>
   <li><b>Optimizer</b> for synthesis is a brute-force optimization code that evaluates single-point mutants of the wild-type sequence for higher theoretical yield.<br>
@@ -27,7 +27,8 @@ Using <b>gradient activation maps</b>, we provide monomer and sub-structure leve
 
 ## Dependencies
 The package requires:
-* <a href='https://www.tensorflow.org/'>Tensorflow 2.x</a>
+* <a href='https://www.python.org/downloads/release/python-370/'>Python 3.7</a>
+* <a href='https://www.tensorflow.org/'>Tensorflow 2.0</a>
 * <a href='https://www.rdkit.org/'>RDKit </a>
 
 ## How to cite
@@ -47,12 +48,16 @@ year = {2020}
 Optimization of synthetic accessibility codebase -
 ```
 @article{Mohapatra2020,
-author = "Somesh Mohapatra and Nina Hartrampf and Mackenzie Poskus and Andrei Loas and Rafael Gomez-Bombarelli and Bradley L. Pentelute",
-title = "{Deep Learning for Prediction and Optimization of Fast-Flow Peptide Synthesis}",
-year = "2020",
-month = "7",
-url = "https://chemrxiv.org/articles/preprint/Deep_Learning_for_Prediction_and_Optimization_of_Fast-Flow_Peptide_Synthesis/12649343",
-doi = "10.26434/chemrxiv.12649343.v1"
+annote = {doi: 10.1021/acscentsci.0c00979},
+author = {Mohapatra, Somesh and Hartrampf, Nina and Poskus, Mackenzie and Loas, Andrei and G{\'{o}}mez-Bombarelli, Rafael and Pentelute, Bradley L},
+doi = {10.1021/acscentsci.0c00979},
+issn = {2374-7943},
+journal = {ACS Central Science},
+month = {nov},
+publisher = {American Chemical Society},
+title = {{Deep Learning for Prediction and Optimization of Fast-Flow Peptide Synthesis}},
+url = {https://doi.org/10.1021/acscentsci.0c00979},
+year = {2020}
 }
 ```
 

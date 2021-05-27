@@ -1,4 +1,5 @@
 # Peptimizer
+[![DOI](https://zenodo.org/badge/254705594.svg)](https://zenodo.org/badge/latestdoi/254705594)
 
 Peptimizer is a repository based on machine learning algorithms for the optimization of peptides, and functional polymers in general. The codebase has been designed to be used for optimization of functionality and synthetic accessibility.
 
